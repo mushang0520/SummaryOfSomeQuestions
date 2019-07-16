@@ -1,4 +1,9 @@
 # 问题列表
+## mui使用中的坑
+	```
+	# 引入mui.js,不要引入mui.min.js,否则会出现各种问题，目前mui.min.js是阉割版的，希望以后官方能说明，或者使用统一的版本
+	# mui.openWindow()打开新页面，a链接中href="javascript:;"来阻止默认跳转,不能用#代替，否则会出现跳转之后，立马返回当前页的bug。
+	```
 ## ios滑动不流畅
 ```
 // 设置overflow: auto的滑动元素加上：
