@@ -44,28 +44,7 @@ height: 101%
     ```
     解决方案：设置.picker-items{width:100%}
     ```
-## 彩色图片转为黑白
-```
-.gray { 
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    
-    filter: grayscale(100%);
-	
-    filter: gray;
-}
-```
-* 我们还可以直接在CSS,像图片一样引用SVG文件
-```
-.gray{
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  filter: gray;
-  filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
-} 
-```
+
 ### ES6动态的加载机制
 ```
 // 1. 动态的加载机制
