@@ -8,6 +8,7 @@
 ```
 // 设置overflow: auto的滑动元素加上：
 -webkit-overflow-scrolling:touch
+// 会造成页面z-index失效的bug，谨慎使用
 // 如果元素的内容是动态撑开的，会造成不能滑动的bug，
 //需要手动触发滚动条加上下面的代码：
 //方案1：
